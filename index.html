@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Break Time</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#090b0d;
+  color:white;
+}
+
+body{
+  background:
+    linear-gradient(
+      rgba(5,7,10,.35),
+      rgba(5,7,10,.72)
+    ),
+    radial-gradient(
+      circle at 50% 25%,
+      #743c24 0%,
+      #241713 38%,
+      #090b0d 75%
+    );
+}
+
+/* STREET */
+
+.street{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+}
+
+/* SKY */
+
+.sky{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:58%;
+  background:
+    linear-gradient(
+      #111820,
+      #171315 60%,
+      #301914
+    );
+}
+
+/* MOON */
+
+.moon{
+  position:absolute;
+  top:9%;
+  right:12%;
+  width:75px;
+  height:75px;
+  border-radius:50%;
+  background:#f2d7a1;
+  box-shadow:
+    0 0 25px rgba(242,215,161,.35);
+}
+
+/* BUILDINGS */
+
+.building{
+  position:absolute;
+  bottom:34%;
+  background:#18191b;
+  border-top:4px solid #2c2d2e;
+}
+
+.b1{
+  left:-3%;
+  width:28%;
+  height:37%;
+}
+
+.b2{
+  left:23%;
+  width:31%;
+  height:48%;
+  background:#222020;
+}
+
+.b3{
+  right:-5%;
+  width:38%;
+  height:42%;
+  background:#151719;
+}
+
+/* WINDOWS */
+
+.window{
+  position:absolute;
+  width:28px;
+  height:42px;
+  background:#c37b35;
+  box-shadow:0 0 15px rgba(195,123,53,.3);
+}
+
+.w1{left:8%;bottom:42%}
+.w2{left:34%;bottom:50%}
+.w3{left:47%;bottom:41%}
+.w4{right:18%;bottom:46%}
+.w5{right:6%;bottom:39%}
+
+/* ROAD */
+
+.road{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:38%;
+  background:
+    linear-gradient(
+      170deg,
+      #17191a,
+      #080909
+    );
+  transform:skewY(-2deg);
+}
+
+.roadline{
+  position:absolute;
+  left:0;
+  right:0;
+  top:48%;
+  height:3px;
+  background:#40382e;
+  opacity:.6;
+}
+
+/* STREET LIGHT */
+
+.light{
+  position:absolute;
+  left:13%;
+  bottom:31%;
+  width:5px;
+  height:48%;
+  background:#25272a;
+}
+
+.light:before{
+  content:"";
+  position:absolute;
+  top:-10px;
+  left:-12px;
+  width:29px;
+  height:18px;
+  border-radius:50%;
+  background:#d59b4d;
+  box-shadow:
+    0 0 30px #d59b4d,
+    0 0 80px rgba(213,155,77,.35);
+}
+
+/* HERO */
+
+.content{
+  position:relative;
+  z-index:5;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:25px 22px;
+}
+
+.top{
+  display:flex;
+  justify-content:space-between;
+  font-size:11px;
+  letter-spacing:2px;
+  opacity:.8;
+}
+
+.center{
+  text-align:center;
+  margin-top:-5vh;
+}
+
+.small{
+  font-size:14px;
+  letter-spacing:3px;
+  color:#d6aa72;
+  margin-bottom:12px;
+}
+
+h1{
+  font-size:clamp(58px,17vw,145px);
+  line-height:.8;
+  letter-spacing:-5px;
+  font-weight:900;
+  text-shadow:
+    4px 5px 0 #16100
