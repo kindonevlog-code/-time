@@ -1,245 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BREAK TIME</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
 
-<style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-html,body{
-  width:100%;
-  height:100%;
-}
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
 
-body{
-  overflow:hidden;
-  background:#10151d;
-  color:#f4dfbd;
-  font-family:Arial, sans-serif;
-}
-
-.scene{
-  position:relative;
-  width:100%;
-  height:100vh;
-  overflow:hidden;
-  background:
-    radial-gradient(circle at 75% 20%,#6d4938 0%,#24202a 35%,#0b1018 75%);
-}
-
-.moon{
-  position:absolute;
-  width:70px;
-  height:70px;
-  border-radius:50%;
-  background:#f3d9a0;
-  top:10%;
-  right:12%;
-  box-shadow:0 0 35px rgba(243,217,160,.35);
-}
-
-.road{
-  position:absolute;
-  left:-10%;
-  bottom:-8%;
-  width:120%;
-  height:48%;
-  background:#111416;
-  transform:rotate(-2deg);
-}
-
-.building{
-  position:absolute;
-  bottom:32%;
-  background:#171a1e;
-}
-
-.building.one{
-  left:0;
-  width:30%;
-  height:42%;
-}
-
-.building.two{
-  left:27%;
-  width:32%;
-  height:50%;
-  background:#202022;
-}
-
-.building.three{
-  right:0;
-  width:35%;
-  height:44%;
-}
-
-.window{
-  position:absolute;
-  width:28px;
-  height:38px;
-  background:#c98643;
-  box-shadow:0 0 18px rgba(201,134,67,.35);
-}
-
-.w1{left:8%;bottom:43%}
-.w2{left:35%;bottom:49%}
-.w3{left:46%;bottom:40%}
-.w4{right:18%;bottom:46%}
-.w5{right:7%;bottom:38%}
-
-.streetlight{
-  position:absolute;
-  left:14%;
-  bottom:31%;
-  width:5px;
-  height:48%;
-  background:#25282b;
-}
-
-.streetlight:before{
-  content:"";
-  position:absolute;
-  top:-10px;
-  left:-12px;
-  width:30px;
-  height:18px;
-  border-radius:50%;
-  background:#d99a4c;
-  box-shadow:
-    0 0 25px #d99a4c,
-    0 0 70px rgba(217,154,76,.35);
-}
-
-.content{
-  position:relative;
-  z-index:5;
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  padding:24px;
-}
-
-.top{
-  display:flex;
-  justify-content:space-between;
-  font-size:11px;
-  letter-spacing:2px;
-  opacity:.8;
-}
-
-.center{
-  text-align:center;
-  margin-top:-5vh;
-}
-
-.small{
-  color:#d9a66c;
-  font-size:14px;
-  letter-spacing:3px;
-  margin-bottom:12px;
-}
-
-h1{
-  font-size:clamp(65px,16vw,150px);
-  line-height:.8;
-  letter-spacing:-5px;
-  font-weight:900;
-  text-shadow:4px 5px #111;
-}
-
-h1 span{
-  color:#d88945;
-}
-
-.tagline{
-  margin-top:22px;
-  font-size:15px;
-  color:#ddd0bd;
-}
-
-.enter{
-  margin-top:28px;
-  padding:14px 25px;
-  border:0;
-  border-radius:30px;
-  background:#d88945;
-  color:#160d09;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-.bottom{
-  text-align:center;
-  font-size:13px;
-  color:#bdb3a7;
-}
-
-</style>
+    body {
+      min-height: 100vh;
+      background-image: url("background-image: url("file_00000000ef2081fd9af74eae02e34385.png");");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
-
-<div class="scene">
-
-  <div class="moon"></div>
-
-  <div class="building one"></div>
-  <div class="building two"></div>
-  <div class="building three"></div>
-
-  <div class="window w1"></div>
-  <div class="window w2"></div>
-  <div class="window w3"></div>
-  <div class="window w4"></div>
-  <div class="window w5"></div>
-
-  <div class="streetlight"></div>
-
-  <div class="road"></div>
-
-  <div class="content">
-
-    <div class="top">
-      <span>SMALL TOWN • INDIA</span>
-      <span>11:47 PM</span>
-    </div>
-
-    <div class="center">
-
-      <div class="small">
-        BAS THODA RUK JA.
-      </div>
-
-      <h1>
-        BREAK<br>
-        <span>TIME</span>
-      </h1>
-
-      <div class="tagline">
-        Apna time. Apni jagah.
-      </div>
-
-      <button class="enter">
-        ENTER THE STREET →
-      </button>
-
-    </div>
-
-    <div class="bottom">
-      ☕ Ek chai aur? &nbsp; • &nbsp;
-      Kal ki tension kal dekhenge.
-    </div>
-
-  </div>
-
-</div>
-
 </body>
 </html>
